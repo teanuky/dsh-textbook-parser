@@ -14,6 +14,28 @@
 
 ---
 
+## 📸 界面一览
+
+> 截图取自真实运行界面（DSH Desktop 0.2.1-rc.5）。**背景为使用者本机的桌面壁纸**，仅用于展示半透明卡片的实际观感，壁纸本身不随本仓库分发。
+
+### 全书总纲：总目标 · 原始痛点 · 迭代主线 · 缺陷→修复链路
+
+![全书总纲](docs/images/01-book-overview.png)
+
+### 章地图：每章一张卡片，写明它修复了上一章什么缺陷
+
+![章地图](docs/images/02-chapter-map.png)
+
+### 小节视图：小卡片网格 + 每节知识点数
+
+![小节视图](docs/images/05-section-view.png)
+
+### 知识点详情：★ 重点 / 详细讲解 / 学习要点 / 定理卡 / 折叠推导 / 例题 / 七段汇总
+
+![知识点详情](docs/images/04-point-detail-v13.png)
+
+---
+
 ## ✨ 它长什么样（核心特点）
 
 ### ① 问题驱动 · 迭代链
@@ -123,6 +145,13 @@ DSH（DeepSeek Harness）插件体系、槽位与服务接口属于 [DeepSeek Ha
 ## 📄 许可证
 
 [MIT](LICENSE) © 2026 dsh-textbook-parser contributors
+
+## 🤝 参与贡献
+
+- 贡献指南：[CONTRIBUTING.md](CONTRIBUTING.md)（本地开发、测试命令、代码与内容约定、提交流程）
+- 行为准则：[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+- 问题反馈：[Issues](https://github.com/teanuky/dsh-textbook-parser/issues) ｜ 安全漏洞见 [SECURITY.md](SECURITY.md)
+- 在线演示：<https://teanuky.github.io/dsh-textbook-parser/>（导出效果实拍，不装插件也能看）
 
 ## 🔧 开发
 
