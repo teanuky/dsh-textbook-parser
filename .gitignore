@@ -17,9 +17,10 @@ package-lock.json
 coverage/
 *.tsbuildinfo
 
-# Runtime user data (never commit) — 用户在 $DSH_HOME 下的教材数据
-# 注意：不要用 books/ 这样的宽泛规则，否则会误伤内置示例 data/books/
-textbook-parser/
+# Runtime user data (never commit)
+# 用户在 $DSH_HOME/textbook-parser/ 下的教材数据不在包内，无需在此忽略。
+# 注意：不要用 books/ 或 textbook-parser/ 这类宽泛规则，
+# 否则会误伤内置示例 data/books/ 与技能目录 skills/textbook-parser/
 
 # Editor
 .vscode/
