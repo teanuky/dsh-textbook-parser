@@ -1,0 +1,27 @@
+# OS specifics
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & temp
+*.log
+*.tmp
+*.bak
+*~
+
+# Node
+node_modules/
+package-lock.json
+pnpm-lock.yaml.bak
+
+# Test & build artifacts that should not ship
+coverage/
+*.tsbuildinfo
+
+# Local user data written by the plugin at runtime (never commit)
+books/
+textbook-parser/
+
+# Editor
+.vscode/
+.idea/

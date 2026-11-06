@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Textbook Knowledge Framework",
+    "description": "Problem-driven iterative breakdown of STEM textbooks: nested cards from book to chapter, section and knowledge point, each explaining which defect of the previous approach it fixes; ships the textbook-parser skill and an archive tool."
+  }
+}

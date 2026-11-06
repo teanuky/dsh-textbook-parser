@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Textbook knowledge framework">
+  <defs>
+    <linearGradient id="tbp-book" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <path d="M10 15.5c6.5-2.6 12.7-2.6 19 0v33c-6.3-2.6-12.5-2.6-19 0z" fill="url(#tbp-book)" opacity="0.95"/>
+  <path d="M29 15.5c6.5-2.6 12.7-2.6 19 0v33c-6.3-2.6-12.5-2.6-19 0z" fill="url(#tbp-book)" opacity="0.7"/>
+  <path d="M29 15.5c6.5-2.6 12.7-2.6 19 0v33c-6.3-2.6-12.5-2.6-19 0" fill="none" stroke="#ffffff" stroke-opacity="0.55" stroke-width="1.4"/>
+  <circle cx="14" cy="45" r="3.4" fill="#22c55e"/>
+  <circle cx="29" cy="51" r="3.4" fill="#f59e0b"/>
+  <circle cx="44" cy="45" r="3.4" fill="#22c55e"/>
+  <path d="M14 45C19 39 24 38 29 51" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3 2"/>
+  <path d="M29 51c5-13 10-12 15-6" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="3 2"/>
+</svg>

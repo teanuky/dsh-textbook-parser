@@ -1,0 +1,37 @@
+{
+  "name": "dsh-textbook-parser",
+  "version": "1.3.0",
+  "private": true,
+  "type": "module",
+  "description": "理工科教材拆解：问题驱动迭代的知识框架，嵌套卡片式 Web 面板 + textbook-parser 技能 + 落库工具。",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "host/",
+    "client.js",
+    "skills/",
+    "data/",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}

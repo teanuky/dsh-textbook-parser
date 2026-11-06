@@ -1,0 +1,5 @@
+# dsh-textbook-parser bundle layer: only inserts this bundle's own row.
+# Never overrides an existing row id, so other plugins and host features are untouched.
+- insert:
+    - id: textbook-parser
+      name: 'dsh-textbook-parser'
