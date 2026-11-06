@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Syntax check (all JS)
+        run: |
+          for f in index.js client.js host/*.js test/*.mjs; do
+            node --check "$f"
+          done
+          echo "✓ all syntax checks passed"
+
+      - name: Host unit tests (31)
+        run: node test/host.test.mjs
+
+      - name: Validate bundled textbook data
+        run: node test/validate-data.mjs
+
+      - name: Client static checks + interaction smoke (308+)
+        run: node test/client-check.mjs
+
+      - name: Security audit — no external URLs in source
+        run: |
+          # The plugin must not talk to the network. Whitelist:
+          #  - localhost / 127.0.0.1 (same-origin API)
+          #  - data: URIs (embedded formula images)
+          #  - w3.org SVG namespace constant
+          #  - comments and docs
+          BAD=$(grep -rnE "https?://" --include='*.js' client.js host/ index.js \
+            | grep -vE "localhost|127\.0\.0\.1|data:|w3\.org|^\s*//|/\*|\*" \
+            | grep -vE "//|/\*" || true)
+          if [ -n "$BAD" ]; then
+            echo "✗ External URL found:"; echo "$BAD"; exit 1
+          fi
+          echo "✓ no external URLs"
+
+      - name: Security audit — no secrets / personal paths
+        run: |
+          BAD=$(grep -rniE "(api[_-]?key|password|secret\s*=|BEGIN.*PRIVATE)|Users\\\\|Users/[a-z0-9]+" \
+            --include='*.js' --include='*.json' . | grep -vE "tokenRef|主题 token|dataUrl|tokenUri" || true)
+          if [ -n "$BAD" ]; then
+            echo "✗ Potential secret / personal path:"; echo "$BAD"; exit 1
+          fi
+          echo "✓ no secrets or personal paths"
