@@ -12,14 +12,13 @@ desktop.ini
 # Node
 node_modules/
 package-lock.json
-pnpm-lock.yaml.bak
 
-# Test & build artifacts that should not ship
+# Test & build artifacts
 coverage/
 *.tsbuildinfo
 
-# Local user data written by the plugin at runtime (never commit)
-books/
+# Runtime user data (never commit) — 用户在 $DSH_HOME 下的教材数据
+# 注意：不要用 books/ 这样的宽泛规则，否则会误伤内置示例 data/books/
 textbook-parser/
 
 # Editor
