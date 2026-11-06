@@ -1,5 +1,7 @@
 # dsh-textbook-parser · 安装与使用说明（给别人看的版本）
 
+> **English (TL;DR)**: Requires DSH 0.2.x with Web GUI. `git clone` this repo to a fixed folder, then ask your DSH agent to run `plugin_manager install_bundle` on that absolute path. Refresh (F5) → a "教材知识框架" icon appears in the sidebar. Click it to browse the bundled sample (Signals & Systems, 12ch/116sec/263 points/601 examples). To break down your own textbook, tell the agent: "用 textbook-parser 拆解《XXX》…" and it will store the result via the `textbook_archive` tool. Use the panel's "导出" (Export) button for a self-contained interactive HTML / Word / PDF. Full Chinese guide below; data lives in `$DSH_HOME/textbook-parser/books/`.
+
 > 理工科教材拆解插件：把整本教材整理成「全书 → 章 → 节 → 知识点」的嵌套卡片知识地图，
 > 每个知识点都说明「它为了解决上一环什么缺陷而来」，并配**生活类比**与**可自学详解**帮助理解；
 > 每节带**知识点汇总**与**多题型典型例题**，重点知识点带 **★ 星标**，可一键导出**交互式网页**（与侧栏一致）/ Word / PDF 到手机离线看。
