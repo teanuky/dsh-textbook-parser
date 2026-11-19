@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![DSH](https://img.shields.io/badge/DSH-0.2.x-blue)](https://github.com/deepseek-ai/deepseek-harness)
 [![Version](https://img.shields.io/badge/version-1.3.0-green)]()
+[![awesome-dsh-plugin](https://img.shields.io/badge/awesome--dsh--plugin-listed-blue)](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)
 
 > **DSH 教材知识框架插件**：把任意理工科教材拆解成「**全书 → 章 → 节 → 知识点**」四层嵌套卡片知识地图。
 > 每个知识点都回答同一个问题——**它是为了解决前面方案的什么缺陷而来**——知识不是名词堆砌，而是一条不断修复缺陷的迭代链。
@@ -152,6 +153,7 @@ DSH（DeepSeek Harness）插件体系、槽位与服务接口属于 [DeepSeek Ha
 - 行为准则：[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 - 问题反馈：[Issues](https://github.com/teanuky/dsh-textbook-parser/issues) ｜ 安全漏洞见 [SECURITY.md](SECURITY.md)
 - 在线演示：<https://teanuky.github.io/dsh-textbook-parser/>（导出效果实拍，不装插件也能看）
+- 收录情况：已收录于 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 的 **Docs & Rendering** 分类（[条目文件](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/data/plugins/teanuky__dsh-textbook-parser.yml)）
 
 ## 🔧 开发
 
